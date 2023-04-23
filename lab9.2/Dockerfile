@@ -2,6 +2,7 @@
 FROM gcc:latest
 # Copy the C program into the container
 COPY Program1.c .
+COPY input.txt .
 # Compile the C program
 RUN gcc -o Program1 Program1.c
 # Set the command to run when the container starts
